@@ -23,10 +23,18 @@ a {
   text-decoration: none;
   color: #000; }
 
+main {
+  margin-top: 15rem; }
+
 header {
   border-bottom: 1px solid #e1e1e1;
   box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3);
-  background-color: #fff; }
+  background-color: #fff;
+  opacity: 0.9;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0; }
   header .mobile-header {
     padding: 1rem 2rem; }
     header .mobile-header .mobile-header-navbar {
@@ -54,7 +62,8 @@ header {
           display: inline-block;
           width: 2rem;
           height: 1.2rem;
-          position: relative; }
+          position: relative;
+          margin: 0; }
         header .mobile-header .mobile-header-navbar .mobile-icon-container .mobile-icon span {
           width: 100%;
           height: 0.15rem;

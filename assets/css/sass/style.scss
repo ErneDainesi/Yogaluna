@@ -30,10 +30,19 @@ a {
   color: #000;
 }
 
+main {
+  margin-top: 15rem;
+}
+
 header {
   border-bottom: 1px solid #e1e1e1;
   box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3);
   background-color: #fff;
+  opacity: 0.9;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
   .mobile-header {
     padding: 1rem 2rem;
     .mobile-header-navbar {
@@ -65,6 +74,7 @@ header {
           width: 2rem;
           height: 1.2rem;
           position: relative;
+          margin: 0;
         }
         .mobile-icon span {
           width: 100%;
