@@ -1,5 +1,6 @@
-$primary-color: #945b5b;
+$primary-color: #cda6ae;
 $background-color: #fff9f9;
+$button-color: #f2b1be;
 $title-font: "Josefin Sans", sans-serif;
 $description-font: "Karma", serif;
 
@@ -110,5 +111,65 @@ header {
         }
       }
     }
+  }
+}
+
+.container-fluid {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.category {
+  width: 80%;
+  margin: 5rem auto;
+  text-align: center;
+  .category-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .category-image {
+    width: 10rem;
+  }
+  .category-description {
+    font-size: 1.5rem;
+  }
+  .category-benefits {
+    .category-benefits-title {
+      font-weight: bold;
+    }
+    .category-benefit {
+      display: flex;
+      justify-content: space-between;
+      margin: 2rem 0;
+      position: relative;
+      .category-benefit-description {
+        font-size: 1.5rem;
+        margin: 0;
+        padding: 0 4rem;
+      }
+
+      .category-benefit-image {
+        position: absolute;
+        top: 0;
+        right: -2rem;
+        height: 5rem;
+      }
+    }
+    .category-benefit:nth-of-type(2) {
+      .category-benefit-image {
+        position: absolute;
+        top: 0;
+        left: -2rem;
+        height: 5rem;
+      }
+    }
+  }
+  .category-button {
+    background-color: $button-color;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    padding: 0.7rem 2rem;
+    font-weight: bold;
   }
 }
