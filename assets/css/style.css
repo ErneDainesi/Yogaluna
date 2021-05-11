@@ -85,3 +85,26 @@ header {
       header .mobile-header .mobile-header-content .mobile-header-social-media .social-media-link {
         font-size: 2rem;
         margin-right: 0.5rem; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #e3e3e3; }
+  .footer-header {
+    font-size: 2rem;
+    padding: 1rem 0rem 1rem 1rem; }
+  .footer-personal-info {
+    display: flex;
+    flex-direction: column; }
+  .footer-social-media {
+    font-size: 2rem; }
+  .footer-info, .footer-copyright {
+    font-family: "Karma", serif;
+    font-size: 1.5rem; }
+  .footer-location, .footer-phone, .footer-social-media {
+    padding-bottom: 1rem;
+    padding-left: 1rem; }
+  .footer-copyright {
+    text-align: center;
+    background-color: #979595;
+    padding-bottom: 0rem; }
