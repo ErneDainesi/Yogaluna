@@ -114,11 +114,6 @@ header {
   }
 }
 
-.container-fluid {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-}
-
 .category {
   width: 80%;
   margin: 5rem auto;
@@ -133,6 +128,7 @@ header {
   }
   .category-description {
     font-size: 1.5rem;
+    margin: 2rem 0;
   }
   .category-benefits {
     .category-benefits-title {
