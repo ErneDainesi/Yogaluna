@@ -95,7 +95,6 @@ header {
         font-size: 2rem;
         margin-right: 0.5rem; }
 
-
 .yogaluna-section {
   background-color: #cda6ae;
   width: 100%;
@@ -105,7 +104,9 @@ header {
   .yogaluna-section-title {
     margin-top: 2rem;
     text-align: center;
-    font-size: 3rem; }
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase; }
   .yogaluna-section-text {
     font-family: "Karma", serif;
     font-size: 1.8rem;
@@ -151,7 +152,6 @@ header {
     font-size: 1.8rem;
     padding: 0.7rem 2rem;
     font-weight: bold; }
-
 
 .footer {
   display: flex;
