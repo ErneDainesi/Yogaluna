@@ -126,6 +126,26 @@ header {
   }
 }
 
+// Carousel
+.yogaluna-section {
+  background-color: $primary-color;
+  width: 100%;
+  padding: 2rem 0rem 2rem 0rem;
+  border-radius: 1rem;
+  margin: 3rem 0rem;
+  &-title {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  &-text {
+    font-family: $description-font;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
 .category {
   width: 80%;
   margin: 5rem auto;
@@ -192,6 +212,18 @@ header {
   &-header {
     font-size: 2rem;
     padding: 1rem 0rem 1rem 1rem;
+  }
+
+  &-header::after {
+    content: "";
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 6rem;
+    margin-top: 1rem;
+    background: #c7c7c7;
+    display: block;
+    height: 0.15rem;
   }
 
   &-personal-info {
