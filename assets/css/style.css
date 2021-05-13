@@ -109,8 +109,28 @@ header {
     text-transform: uppercase; }
   .yogaluna-section-text {
     font-family: "Karma", serif;
-    font-size: 1.8rem;
-    text-align: center; }
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem 3rem; }
+  .yogaluna-section .carousel-item {
+    position: relative; }
+  .yogaluna-section .carousel-link {
+    position: absolute;
+    margin-left: 2rem; }
+    .yogaluna-section .carousel-link .carousel-image-text {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ffff; }
+    .yogaluna-section .carousel-link .category-button {
+      background-color: #f2b1be;
+      border-radius: 1rem;
+      font-size: 1.3rem;
+      padding: 0.3rem 1rem;
+      font-weight: bold; }
+    .yogaluna-section .carousel-link #image3-text {
+      font-size: 1.6rem;
+      width: 20rem;
+      color: black; }
 
 .category {
   width: 80%;

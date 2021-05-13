@@ -143,8 +143,37 @@ header {
 
   &-text {
     font-family: $description-font;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-align: center;
+    padding: 2rem 3rem;
+  }
+
+  .carousel {
+    &-item {
+      position: relative;
+    }
+
+    &-link {
+      position: absolute;
+      margin-left: 2rem;
+      .carousel-image-text {
+        font-size: 2rem;
+        font-weight: bold;
+        // color: #ffff;
+      }
+      .category-button {
+        background-color: $button-color;
+        border-radius: 1rem;
+        font-size: 1.3rem;
+        padding: 0.3rem 1rem;
+        font-weight: bold;
+      }
+      #image3-text {
+        font-size: 1.6rem;
+        width: 20rem;
+        // color: black;
+      }
+    }
   }
 }
 
