@@ -51,8 +51,7 @@ header {
           flex-direction: column;
           justify-content: flex-end;
           font-size: 3rem;
-          font-weight: bold;
-          text-transform: uppercase; }
+          font-weight: bold; }
       header .mobile-header .mobile-header-navbar .mobile-icon-container {
         padding: 1rem;
         padding-top: 3.5rem;
