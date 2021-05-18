@@ -32,6 +32,8 @@ main {
   margin-top: 15rem;
 }
 
+// HEADER
+
 header {
   border-bottom: 1px solid #e1e1e1;
   box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3);
@@ -171,6 +173,7 @@ header {
   }
 }
 
+// Category (purnayoga y reiki)
 .category {
   width: 80%;
   margin: 5rem auto;
@@ -230,6 +233,7 @@ header {
   display: flex;
   flex-direction: column;
   background-color: $footer-background-color;
+  margin-top: 5rem;
 
   &-header {
     font-size: 2rem;
@@ -274,5 +278,43 @@ header {
     text-align: center;
     background-color: $footer-copyright-bgd-color;
     padding: 2rem 0rem 2rem 0rem;
+  }
+}
+
+// SOBRE MI
+
+.introduction {
+  padding: 0 3rem;
+  text-align: center;
+  &-img {
+    height: 20rem;
+    border-radius: 50%;
+  }
+  &-text {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+}
+.separation {
+  display: flex;
+  justify-content: space-around;
+  margin: 4rem 0;
+  .separation-line {
+    width: 10rem;
+    height: 0.2rem;
+    background-color: #877e7e;
+    border-radius: 1rem;
+  }
+}
+.information {
+  padding: 0 3rem;
+  text-align: center;
+  &-text {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  &-img {
+    height: 10rem;
+    margin: 3rem 0;
   }
 }
