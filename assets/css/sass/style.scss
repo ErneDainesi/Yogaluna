@@ -1,12 +1,5 @@
-$primary-color: #cda6ae;
-$background-color: #fff9f9;
-$button-color: #f2b1be;
-$logo-color: #945b5b;
-$letter-color: #4e4e4e;
-$footer-background-color: #e3e3e3;
-$footer-copyright-bgd-color: #979595;
-$title-font: "Josefin Sans", sans-serif;
-$description-font: "Karma", serif;
+@import "colors";
+@import "fonts";
 
 html {
   font-size: 62.5%;
