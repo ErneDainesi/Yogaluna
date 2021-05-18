@@ -118,8 +118,7 @@ header {
     margin-left: 2rem; }
     .yogaluna-section .carousel-link .carousel-image-text {
       font-size: 2rem;
-      font-weight: bold;
-      color: #ffff; }
+      font-weight: bold; }
     .yogaluna-section .carousel-link .category-button {
       background-color: #f2b1be;
       border-radius: 1rem;
@@ -128,8 +127,7 @@ header {
       font-weight: bold; }
     .yogaluna-section .carousel-link #image3-text {
       font-size: 1.6rem;
-      width: 20rem;
-      color: black; }
+      width: 20rem; }
 
 .category {
   width: 80%;
