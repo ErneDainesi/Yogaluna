@@ -58,7 +58,7 @@ header {
           justify-content: flex-end;
           font-size: 3rem;
           font-weight: bold;
-          text-transform: uppercase;
+          // text-transform: uppercase;
         }
       }
       .mobile-icon-container {
@@ -273,6 +273,6 @@ header {
   &-copyright {
     text-align: center;
     background-color: $footer-copyright-bgd-color;
-    padding-bottom: 0rem;
+    padding: 2rem 0rem 2rem 0rem;
   }
 }
