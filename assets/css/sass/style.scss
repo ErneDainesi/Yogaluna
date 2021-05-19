@@ -328,7 +328,7 @@ header {
     margin: 1.5rem auto;
     align-self: center;
     background-color: $primary-color;
-    width: 9rem;
+    width: 10rem;
     height: 0.6rem;
     border-radius: 0.5rem;
   }
@@ -372,6 +372,7 @@ header {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
+      margin-top: 2.5rem;
       .card {
         align-self: center;
         font-size: 1.3rem;
@@ -398,6 +399,8 @@ header {
     padding: 2rem 0;
     display: flex;
     flex-direction: column;
+    margin-top: 4rem;
+    margin-bottom:10rem;
     .contact-paragraph {
       align-self: center;
       width: 75%;
