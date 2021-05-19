@@ -229,3 +229,78 @@ header {
   .information-img {
     height: 10rem;
     margin: 3rem 0; }
+
+.mobile-propuestas-main {
+  text-align: center; }
+  .mobile-propuestas-main .separation-line-bold {
+    display: block;
+    margin: 1.5rem auto;
+    align-self: center;
+    background-color: #cda6ae;
+    width: 10rem;
+    height: 0.6rem;
+    border-radius: 0.5rem; }
+  .mobile-propuestas-main .social-media-link {
+    font-size: 3.5rem; }
+  .mobile-propuestas-main .image-section {
+    display: flex;
+    flex-direction: column; }
+    .mobile-propuestas-main .image-section .image {
+      border-radius: 1rem; }
+    .mobile-propuestas-main .image-section .image-p {
+      width: 85%;
+      align-self: center;
+      font-size: 1.5rem;
+      margin-top: 2rem; }
+  .mobile-propuestas-main .description-section {
+    display: flex;
+    flex-direction: column; }
+    .mobile-propuestas-main .description-section .description-p {
+      width: 60%;
+      align-self: center;
+      font-size: 1.8rem; }
+    .mobile-propuestas-main .description-section .description-p-bold {
+      font-size: 1.4rem;
+      font-weight: bold; }
+    .mobile-propuestas-main .description-section .description-title {
+      font-size: 2rem;
+      width: 70%;
+      align-self: center; }
+    .mobile-propuestas-main .description-section .cards {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-top: 2.5rem; }
+      .mobile-propuestas-main .description-section .cards .card {
+        align-self: center;
+        font-size: 1.3rem;
+        border: 0.1rem solid #4e4e4e;
+        border-radius: 0.8rem;
+        width: 10rem;
+        margin-bottom: 1.5rem; }
+      .mobile-propuestas-main .description-section .cards .card-pair {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+        .mobile-propuestas-main .description-section .cards .card-pair .card {
+          margin-left: 0.5rem;
+          margin-right: 0.5rem; }
+  .mobile-propuestas-main .contact-section {
+    background-color: #cda6ae;
+    border-radius: 0.7rem;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-bottom: 10rem; }
+    .mobile-propuestas-main .contact-section .contact-paragraph {
+      align-self: center;
+      width: 75%;
+      font-size: 1.5rem; }
+    .mobile-propuestas-main .contact-section .contact-btn {
+      align-self: center;
+      background-color: #fff9f9;
+      border: none;
+      border-radius: 1rem;
+      padding: 0.5rem 0.5rem;
+      font-size: 1.2rem; }
