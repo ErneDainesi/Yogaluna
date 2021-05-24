@@ -1,6 +1,12 @@
 @import "colors";
 @import "fonts";
 
+// MIXINS
+@mixin align-width($alignment, $width) {
+  align-self: $alignment;
+  max-width: $width;
+}
+
 html {
   font-size: 62.5%;
   /* Reset para REMS - 62.5% = 10px de 16 px */
@@ -158,7 +164,6 @@ header {
       .carousel-image-text {
         font-size: 2rem;
         font-weight: bold;
-        // color: #ffff;
       }
       .category-button {
         background-color: $button-color;
@@ -170,7 +175,6 @@ header {
       #image3-text {
         font-size: 1.6rem;
         width: 20rem;
-        // color: black;
       }
     }
   }
@@ -337,11 +341,10 @@ header {
   .separation-line-bold {
     display: block;
     margin: 1.5rem auto;
-    align-self: center;
     background-color: $primary-color;
-    width: 10rem;
     height: 0.6rem;
     border-radius: 0.5rem;
+    @include align-width(center, 10rem);
   }
   .social-media-link {
     font-size: 3.5rem;
@@ -352,12 +355,16 @@ header {
     flex-direction: column;
     .image {
       border-radius: 1rem;
+      max-width: 100%;
     }
     .image-p {
-      width: 85%;
-      align-self: center;
       font-size: 1.5rem;
       margin-top: 2rem;
+      @include align-width(center, 85%);
+    }
+
+    .image-p-margin {
+      margin-top: 0;
     }
   }
 
@@ -365,8 +372,7 @@ header {
     display: flex;
     flex-direction: column;
     .description-p {
-      width: 60%;
-      align-self: center;
+      @include align-width(center, 60%);
       font-size: 1.8rem;
     }
     .description-p-bold {
@@ -375,22 +381,19 @@ header {
     }
 
     .description-title {
-      font-size: 2rem;
-      width: 70%;
-      align-self: center;
+      font-size: 1.6rem;
+      @include align-width(center, 90%);
     }
     .cards {
       display: flex;
       flex-direction: column;
-      flex-wrap: wrap;
       margin-top: 2.5rem;
       .card {
-        align-self: center;
         font-size: 1.3rem;
         border: 0.1rem solid $letter-color;
         border-radius: 0.8rem;
-        width: 10rem;
         margin-bottom: 1.5rem;
+        @include align-width(center, 10rem);
       }
       .card-pair {
         display: flex;
@@ -407,14 +410,13 @@ header {
   .contact-section {
     background-color: $primary-color;
     border-radius: 0.7rem;
-    padding: 2rem 0;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     margin-top: 4rem;
     margin-bottom: 10rem;
     .contact-paragraph {
-      align-self: center;
-      width: 75%;
+      @include align-width(center, 80%);
       font-size: 1.5rem;
     }
     .contact-btn {
