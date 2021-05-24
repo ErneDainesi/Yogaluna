@@ -317,3 +317,11 @@ header {
       border-radius: 1rem;
       padding: 0.5rem 0.5rem;
       font-size: 1.2rem; }
+
+.contact-title {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold; }
+
+.google-form {
+  width: 100%; }
