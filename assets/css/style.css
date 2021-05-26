@@ -228,10 +228,18 @@ header {
   text-align: center; }
   .information-text {
     font-size: 1.8rem;
-    margin: 0; }
-  .information-img {
-    height: 10rem;
     margin: 3rem 0; }
+  .information-img {
+    height: 10rem; }
+
+.separation-line-bold {
+  display: block;
+  align-self: center;
+  background-color: #cda6ae;
+  width: 10rem;
+  height: 0.6rem;
+  border-radius: 0.5rem;
+  margin: 5rem auto; }
 
 .propuestas-main {
   text-align: center;

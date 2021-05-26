@@ -318,12 +318,20 @@ header {
   text-align: center;
   &-text {
     font-size: 1.8rem;
-    margin: 0;
+    margin: 3rem 0;
   }
   &-img {
     height: 10rem;
-    margin: 3rem 0;
   }
+}
+.separation-line-bold {
+  display: block;
+  align-self: center;
+  background-color: $primary-color;
+  width: 10rem;
+  height: 0.6rem;
+  border-radius: 0.5rem;
+  margin: 5rem auto;
 }
 
 // PROPUESTAS
