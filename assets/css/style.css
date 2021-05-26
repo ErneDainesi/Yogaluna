@@ -252,7 +252,7 @@ header {
     height: 0.6rem;
     border-radius: 0.5rem;
     align-self: center;
-    max-width: 10rem; }
+    width: 10rem; }
   .propuestas-main .social-media-link {
     font-size: 3.5rem; }
   .propuestas-main .image-section {
@@ -267,7 +267,7 @@ header {
       font-size: 1.5rem;
       margin-top: 2rem;
       align-self: center;
-      max-width: 85%; }
+      width: 85%; }
     .propuestas-main .image-section .image-p-margin {
       margin-top: 0; }
   .propuestas-main .description-section {
@@ -275,7 +275,7 @@ header {
     flex-direction: column; }
     .propuestas-main .description-section .description-p {
       align-self: center;
-      max-width: 60%;
+      width: 60%;
       font-size: 1.8rem; }
     .propuestas-main .description-section .description-p-bold {
       font-size: 1.4rem;
@@ -283,7 +283,7 @@ header {
     .propuestas-main .description-section .description-title {
       font-size: 1.6rem;
       align-self: center;
-      max-width: 90%; }
+      width: 90%; }
     .propuestas-main .description-section .cards {
       margin-top: 2.5rem; }
       .propuestas-main .description-section .cards .card-row-1,
@@ -297,7 +297,7 @@ header {
           border-radius: 0.8rem;
           margin-bottom: 1.5rem;
           align-self: center;
-          max-width: 10rem; }
+          width: 10rem; }
         .propuestas-main .description-section .cards .card-row-1 .card-pair,
         .propuestas-main .description-section .cards .card-row-2 .card-pair {
           display: flex;
@@ -317,7 +317,7 @@ header {
     margin-bottom: 8rem; }
     .propuestas-main .contact-section .contact-paragraph {
       align-self: center;
-      max-width: 80%;
+      width: 80%;
       font-size: 1.5rem; }
     .propuestas-main .contact-section .contact-btn {
       align-self: center;
@@ -335,11 +335,10 @@ header {
 .google-form {
   width: 100%; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .propuestas-main .separation-line-bold {
-    height: 1rem;
     align-self: center;
-    max-width: 30rem; }
+    width: 30rem; }
   .propuestas-main .social-media-link {
     font-size: 5rem; }
   .propuestas-main .image-section .image-mobile {
@@ -350,13 +349,13 @@ header {
     font-size: 2rem;
     margin-top: 2rem;
     align-self: center;
-    max-width: 75%; }
+    width: 75%; }
   .propuestas-main .description-section {
     display: flex;
     flex-direction: column; }
     .propuestas-main .description-section .description-p {
       align-self: center;
-      max-width: 60%;
+      width: 60%;
       font-size: 2rem; }
     .propuestas-main .description-section .description-p-bold {
       font-size: 1.8rem;
@@ -364,7 +363,7 @@ header {
     .propuestas-main .description-section .description-title {
       font-size: 2.5rem;
       align-self: center;
-      max-width: 90%; }
+      width: 90%; }
     .propuestas-main .description-section .cards {
       margin-bottom: 6rem; }
       .propuestas-main .description-section .cards .card-row-1,
@@ -379,7 +378,7 @@ header {
         .propuestas-main .description-section .cards .card-row-2 .card-pair .card {
           font-size: 2rem;
           align-self: center;
-          max-width: 13rem; }
+          width: 13rem; }
         .propuestas-main .description-section .cards .card-row-1 .card-pair,
         .propuestas-main .description-section .cards .card-row-2 .card-pair {
           display: flex;
@@ -403,7 +402,7 @@ header {
     align-self: center; }
     .propuestas-main .contact-section .contact-paragraph {
       align-self: center;
-      max-width: 80%;
+      width: 80%;
       font-size: 2rem; }
     .propuestas-main .contact-section .contact-btn {
       align-self: center;
