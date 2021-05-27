@@ -4,7 +4,7 @@
 // MIXINS
 @mixin align-width($alignment, $width) {
   align-self: $alignment;
-  max-width: $width;
+  width: $width;
 }
 
 html {
@@ -336,8 +336,10 @@ header {
 
 // PROPUESTAS
 
-.mobile-propuestas-main {
+.propuestas-main {
   text-align: center;
+  display: flex;
+  flex-direction: column;
   .separation-line-bold {
     display: block;
     margin: 1.5rem auto;
@@ -353,6 +355,9 @@ header {
   .image-section {
     display: flex;
     flex-direction: column;
+    .image-desktop {
+      display: none;
+    }
     .image {
       border-radius: 1rem;
       max-width: 100%;
@@ -385,23 +390,26 @@ header {
       @include align-width(center, 90%);
     }
     .cards {
-      display: flex;
-      flex-direction: column;
       margin-top: 2.5rem;
-      .card {
-        font-size: 1.3rem;
-        border: 0.1rem solid $letter-color;
-        border-radius: 0.8rem;
-        margin-bottom: 1.5rem;
-        @include align-width(center, 10rem);
-      }
-      .card-pair {
+      .card-row-1,
+      .card-row-2 {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
         .card {
-          margin-left: 0.5rem;
-          margin-right: 0.5rem;
+          font-size: 1.3rem;
+          border: 0.1rem solid $letter-color;
+          border-radius: 0.8rem;
+          margin-bottom: 1.5rem;
+          @include align-width(center, 10rem);
+        }
+        .card-pair {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          .card {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+          }
         }
       }
     }
@@ -413,8 +421,8 @@ header {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    margin-top: 4rem;
-    margin-bottom: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
     .contact-paragraph {
       @include align-width(center, 80%);
       font-size: 1.5rem;
@@ -439,4 +447,105 @@ header {
 
 .google-form {
   width: 100%;
+}
+
+// PROPUESTAS DESKTOP
+@media screen and (min-width: 769px) {
+  .propuestas-main {
+    .separation-line-bold {
+      @include align-width(center, 30rem);
+    }
+    .social-media-link {
+      font-size: 5rem;
+    }
+
+    .image-section {
+      .image-mobile {
+        display: none;
+      }
+      .image-desktop {
+        display: block;
+      }
+      .image-p {
+        font-size: 2rem;
+        margin-top: 2rem;
+        @include align-width(center, 75%);
+      }
+    }
+
+    .description-section {
+      display: flex;
+      flex-direction: column;
+      .description-p {
+        @include align-width(center, 60%);
+        font-size: 2rem;
+      }
+      .description-p-bold {
+        font-size: 1.8rem;
+        font-weight: bold;
+      }
+
+      .description-title {
+        font-size: 2.5rem;
+        @include align-width(center, 90%);
+      }
+      .cards {
+        margin-bottom: 6rem;
+        .card-row-1,
+        .card-row-2 {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin-top: 2.5rem;
+          .card,
+          .card-pair .card {
+            font-size: 2rem;
+            @include align-width(center, 13rem);
+          }
+          .card-pair {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            .card {
+              margin-left: 0.5rem;
+              margin-right: 0.5rem;
+            }
+          }
+        }
+
+        .card-row-1 {
+          margin-bottom: 1.5rem;
+          .card,
+          .card-pair .card {
+            margin: 0 5rem;
+          }
+        }
+
+        .card-row-2 {
+          .card,
+          .card-pair .card {
+            margin: 0 6rem;
+          }
+        }
+      }
+    }
+
+    .contact-section {
+      padding: 1.5rem;
+      max-width: 70%;
+      align-self: center;
+      .contact-paragraph {
+        @include align-width(center, 80%);
+        font-size: 2rem;
+      }
+      .contact-btn {
+        align-self: center;
+        background-color: $background-color;
+        border: none;
+        border-radius: 1rem;
+        padding: 0.5rem 0.5rem;
+        font-size: 1.8rem;
+      }
+    }
+  }
 }
