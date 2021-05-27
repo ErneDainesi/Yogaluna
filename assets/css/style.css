@@ -190,9 +190,10 @@ header {
       margin: 3rem 0;
       position: relative; }
       .categories .category .category-benefits .category-benefit .category-benefit-description {
-        font-size: 1.5rem;
         margin: 0 auto;
         padding: 0 4rem; }
+        .categories .category .category-benefits .category-benefit .category-benefit-description p {
+          font-size: 1.5rem; }
       .categories .category .category-benefits .category-benefit .category-benefit-image {
         position: absolute;
         top: 0;
@@ -200,7 +201,7 @@ header {
         height: 4rem; }
     .categories .category .category-benefits .category-benefit:nth-of-type(2) .category-benefit-image {
       left: -2rem; }
-  .categories .category .category-button {
+  .categories .category .category-button a {
     background-color: #f2b1be;
     border-radius: 1rem;
     font-size: 1.8rem;
@@ -227,7 +228,8 @@ header {
       background-image: url("../img/inicio/iconos-inicio/yoga-pose.png");
       background-repeat: no-repeat;
       background-position: center;
-      background-attachment: fixed; }
+      background-attachment: fixed;
+      margin: 5rem 0; }
     .categories .category {
       padding: 0 1rem; }
       .categories .category .web-title {
@@ -264,24 +266,28 @@ header {
         display: none; } }
 
 @media (min-width: 1024px) {
-  .categories .category .category-title {
+  .categories .category .category-title h2 {
     font-size: 3.5rem; }
-  .categories .category .category-description p {
+  .categories .category .category-description {
     font-size: 2rem; }
   .categories .category .category-benefits-title h3 {
     font-size: 2.4rem; }
   .categories .category .category-benefits .category-benefit .category-benefit-description {
-    font-size: 2rem;
-    padding: 0 2rem; } }
+    padding: 0 2rem;
+    font-size: 2rem; } }
 
 @media (min-width: 1200px) {
-  .categories .category .category-description {
+  .categories .category .category-description p {
     font-size: 2.3rem; }
   .categories .category .category-benefits .category-benefit {
     width: 90%;
     margin: 3rem auto; }
     .categories .category .category-benefits .category-benefit .category-benefit-image {
       height: 5rem; } }
+
+@media (min-width: 1500px) {
+  .categories .category .category-benefits .category-benefit {
+    width: 60%; } }
 
 .footer {
   display: flex;

@@ -258,11 +258,12 @@ header {
         margin: 3rem 0;
         position: relative;
         .category-benefit-description {
-          font-size: 1.5rem;
           margin: 0 auto;
           padding: 0 4rem;
+          p {
+            font-size: 1.5rem;
+          }
         }
-
         .category-benefit-image {
           position: absolute;
           top: 0;
@@ -277,11 +278,13 @@ header {
       }
     }
     .category-button {
-      background-color: $button-color;
-      border-radius: 1rem;
-      font-size: 1.8rem;
-      padding: 0.7rem 2rem;
-      font-weight: bold;
+      a {
+        background-color: $button-color;
+        border-radius: 1rem;
+        font-size: 1.8rem;
+        padding: 0.7rem 2rem;
+        font-weight: bold;
+      }
     }
   }
 }
@@ -319,18 +322,13 @@ header {
   .categories {
     display: flex;
     .categories-separation {
-      // display: block;
-      // height: fit-content;
-      // margin-top: 10rem;
-      // position: sticky;
-      // top: 0;
-      // left: 0;
       display: block;
       width: 60rem;
       background-image: url("../img/inicio/iconos-inicio/yoga-pose.png");
       background-repeat: no-repeat;
       background-position: center;
       background-attachment: fixed;
+      margin: 5rem 0;
     }
     .category {
       padding: 0 1rem;
@@ -388,12 +386,12 @@ header {
   .categories {
     .category {
       .category-title {
-        font-size: 3.5rem;
+        h2 {
+          font-size: 3.5rem;
+        }
       }
       .category-description {
-        p {
-          font-size: 2rem;
-        }
+        font-size: 2rem;
       }
 
       .category-benefits-title {
@@ -404,8 +402,8 @@ header {
       .category-benefits {
         .category-benefit {
           .category-benefit-description {
-            font-size: 2rem;
             padding: 0 2rem;
+            font-size: 2rem;
           }
         }
       }
@@ -417,7 +415,9 @@ header {
   .categories {
     .category {
       .category-description {
-        font-size: 2.3rem;
+        p {
+          font-size: 2.3rem;
+        }
       }
       .category-benefits {
         .category-benefit {
@@ -426,6 +426,18 @@ header {
           .category-benefit-image {
             height: 5rem;
           }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .categories {
+    .category {
+      .category-benefits {
+        .category-benefit {
+          width: 60%;
         }
       }
     }
