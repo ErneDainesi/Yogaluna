@@ -23,15 +23,17 @@ function change_web_icon() {
   let promotion_msj = document
     .getElementById("categories-separation")
     .getBoundingClientRect();
-
-  console.log(promotion_msj.top);
-  if (promotion_msj.top <= 190 && promotion_msj.top >= -325) {
-    console.log("Tiene que moverse");
-    $("#categories-separation").css({ "background-attachment": "fixed" });
+  if (promotion_msj.top <= 210 && promotion_msj.top >= -300) {
+    $("#categories-separation").css({
+      "background-attachment": "fixed",
+      "background-position": "center",
+    });
   } else {
-    console.log("No tiene que moverse");
-    console.log($("#categories-separation"));
-
     $("#categories-separation").css({ "background-attachment": "local" });
+    if (promotion_msj.top >= 210) {
+      $("#categories-separation").css({ "background-position": "top" });
+    } else if (promotion_msj.top <= -300) {
+      $("#categories-separation").css({ "background-position": "bottom" });
+    }
   }
 }
