@@ -27,6 +27,10 @@ a {
 a:visited {
   color: inherit; }
 
+a:hover {
+  color: #945b5b;
+  transition: color 0.5s ease; }
+
 main {
   margin-top: 15rem; }
 
@@ -38,63 +42,88 @@ header {
   width: 100%;
   position: fixed;
   z-index: 2;
-  top: 0; }
-  header .mobile-header {
-    padding: 1rem 2rem; }
-    header .mobile-header .mobile-header-navbar {
+  top: 0;
+  padding: 1rem 2rem; }
+  header .header-navbar {
+    display: flex;
+    justify-content: space-between; }
+    header .header-navbar .logo a {
+      display: flex; }
+      header .header-navbar .logo a .logo-image {
+        height: 7rem; }
+      header .header-navbar .logo a .logo-title {
+        color: #945b5b;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        font-size: 3rem;
+        font-weight: bold; }
+    header .header-navbar .mobile-icon-container {
+      padding: 1rem;
+      padding-top: 3.5rem;
+      border-radius: 1rem; }
+      header .header-navbar .mobile-icon-container .mobile-icon {
+        display: inline-block;
+        width: 2.2rem;
+        height: 1.4rem;
+        position: relative;
+        margin: 0; }
+      header .header-navbar .mobile-icon-container .mobile-icon span {
+        width: 100%;
+        height: 0.2rem;
+        display: block;
+        position: absolute;
+        background: #707070;
+        border-radius: 1rem;
+        transition: transform 1s ease, width 0.5s ease-in; }
+      header .header-navbar .mobile-icon-container .mobile-icon span:nth-child(1) {
+        top: 0;
+        transform-origin: 0.4rem 0.5rem; }
+      header .header-navbar .mobile-icon-container .mobile-icon span:nth-child(2) {
+        top: calc(50% - 0.05rem); }
+      header .header-navbar .mobile-icon-container .mobile-icon span:nth-child(3) {
+        bottom: 0;
+        transform-origin: 0.5rem -0.3rem; }
+  header .header-content {
+    display: none; }
+    header .header-content .header-navigation .header-links {
+      margin: 2rem 0 0 0;
+      padding: 0; }
+      header .header-content .header-navigation .header-links .header-link {
+        list-style-type: none;
+        text-align: center;
+        margin-bottom: 1rem; }
+        header .header-content .header-navigation .header-links .header-link .link {
+          font-size: 1.7rem; }
+    header .header-content .header-social-media .social-media-link {
+      font-size: 2rem;
+      margin-right: 0.5rem; }
+
+.web-header {
+  display: none; }
+
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between; }
+    header .header-navbar {
+      width: 30%; }
+      header .header-navbar .mobile-icon-container {
+        display: none; }
+    header .header-content {
       display: flex;
-      justify-content: space-between; }
-      header .mobile-header .mobile-header-navbar .logo {
-        display: flex; }
-        header .mobile-header .mobile-header-navbar .logo .logo-image {
-          height: 7rem; }
-        header .mobile-header .mobile-header-navbar .logo .logo-title {
-          color: #945b5b;
+      justify-content: space-between;
+      width: 70%;
+      margin-top: 3.5rem; }
+      header .header-content .header-navigation {
+        width: 80%; }
+        header .header-content .header-navigation .header-links {
           display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-          font-size: 3rem;
-          font-weight: bold; }
-      header .mobile-header .mobile-header-navbar .mobile-icon-container {
-        padding: 1rem;
-        padding-top: 3.5rem;
-        border-radius: 1rem; }
-        header .mobile-header .mobile-header-navbar .mobile-icon-container .mobile-icon {
-          display: inline-block;
-          width: 2.2rem;
-          height: 1.4rem;
-          position: relative;
+          justify-content: space-around;
           margin: 0; }
-        header .mobile-header .mobile-header-navbar .mobile-icon-container .mobile-icon span {
-          width: 100%;
-          height: 0.2rem;
-          display: block;
-          position: absolute;
-          background: #707070;
-          border-radius: 1rem;
-          transition: transform 1s ease, width 0.5s ease-in; }
-        header .mobile-header .mobile-header-navbar .mobile-icon-container .mobile-icon span:nth-child(1) {
-          top: 0;
-          transform-origin: 0.4rem 0.5rem; }
-        header .mobile-header .mobile-header-navbar .mobile-icon-container .mobile-icon span:nth-child(2) {
-          top: calc(50% - 0.05rem); }
-        header .mobile-header .mobile-header-navbar .mobile-icon-container .mobile-icon span:nth-child(3) {
-          bottom: 0;
-          transform-origin: 0.5rem -0.3rem; }
-    header .mobile-header .mobile-header-content {
-      display: none; }
-      header .mobile-header .mobile-header-content .mobile-header-navigation .header-links {
-        margin: 2rem 0 0 0;
-        padding: 0; }
-        header .mobile-header .mobile-header-content .mobile-header-navigation .header-links .header-link {
-          list-style-type: none;
-          text-align: center;
-          margin-bottom: 1rem; }
-          header .mobile-header .mobile-header-content .mobile-header-navigation .header-links .header-link .link {
-            font-size: 1.7rem; }
-      header .mobile-header .mobile-header-content .mobile-header-social-media .social-media-link {
-        font-size: 2rem;
-        margin-right: 0.5rem; }
+      header .header-content .header-social-media {
+        width: 20%;
+        text-align: end; } }
 
 .yogaluna-section {
   background-color: #cda6ae;
@@ -131,43 +160,128 @@ header {
       font-size: 1.6rem;
       width: 20rem; }
 
-.category {
+.categories .categories-separation {
+  display: none; }
+
+.categories .category {
   width: 80%;
   margin: 5rem auto;
   text-align: center; }
-  .category .category-title {
-    font-size: 3rem;
+  .categories .category .category-title h2 {
     font-weight: bold;
+    font-size: 3rem;
     text-transform: uppercase; }
-  .category .category-image {
+  .categories .category .category-image {
     width: 10rem; }
-  .category .category-description {
-    font-size: 1.5rem;
+  .categories .category .category-description {
     margin: 2rem 0; }
-  .category .category-benefits .category-benefits-title {
-    font-weight: bold; }
-  .category .category-benefits .category-benefit {
-    display: flex;
-    justify-content: space-between;
-    margin: 2rem 0;
-    position: relative; }
-    .category .category-benefits .category-benefit .category-benefit-description {
+    .categories .category .category-description p {
       font-size: 1.5rem;
-      margin: 0;
-      padding: 0 4rem; }
-    .category .category-benefits .category-benefit .category-benefit-image {
-      position: absolute;
-      top: 0;
-      right: -2rem;
-      height: 4rem; }
-  .category .category-benefits .category-benefit:nth-of-type(2) .category-benefit-image {
-    left: -2rem; }
-  .category .category-button {
+      margin: auto 0; }
+  .categories .category .category-benefits-title h3 {
+    font-weight: bold; }
+  .categories .category .web-title {
+    display: none; }
+  .categories .category .category-benefits {
+    margin-bottom: 4rem; }
+    .categories .category .category-benefits .category-benefit {
+      display: flex;
+      justify-content: space-between;
+      margin: 3rem 0;
+      position: relative; }
+      .categories .category .category-benefits .category-benefit .category-benefit-description {
+        font-size: 1.5rem;
+        margin: 0 auto;
+        padding: 0 4rem; }
+      .categories .category .category-benefits .category-benefit .category-benefit-image {
+        position: absolute;
+        top: 0;
+        right: -2rem;
+        height: 4rem; }
+    .categories .category .category-benefits .category-benefit:nth-of-type(2) .category-benefit-image {
+      left: -2rem; }
+  .categories .category .category-button {
     background-color: #f2b1be;
     border-radius: 1rem;
     font-size: 1.8rem;
     padding: 0.7rem 2rem;
     font-weight: bold; }
+
+@media (min-width: 550px) {
+  .categories .category .category-benefits {
+    width: 80%;
+    margin: 0 auto; }
+    .categories .category .category-benefits .category-benefit .category-benefit-description {
+      font-size: 1.7rem; } }
+
+@media (min-width: 680px) {
+  .categories .category .category-benefits .category-benefit .category-benefit-description {
+    padding: 0 7rem; } }
+
+@media (min-width: 768px) {
+  .categories {
+    display: flex; }
+    .categories .categories-separation {
+      display: block;
+      width: 60rem;
+      background-image: url("../img/inicio/iconos-inicio/yoga-pose.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed; }
+    .categories .category {
+      padding: 0 1rem; }
+      .categories .category .web-title {
+        display: block; }
+      .categories .category .mobile-title {
+        display: none; }
+      .categories .category .category-image {
+        display: none; }
+      .categories .category .category-description {
+        height: 15rem; }
+        .categories .category .category-description p {
+          font-size: 1.7rem; }
+      .categories .category .category-benefits-title::before {
+        content: "";
+        display: block;
+        width: 90%;
+        height: 0.15rem;
+        background-color: #4e4e4e;
+        margin: 5rem auto 7rem auto; }
+      .categories .category .category-benefits {
+        margin: 0;
+        width: 100%; }
+        .categories .category .category-benefits .category-benefit {
+          height: 10rem; }
+          .categories .category .category-benefits .category-benefit .category-benefit-description {
+            padding: 0;
+            margin: auto 0; }
+          .categories .category .category-benefits .category-benefit .category-benefit-image {
+            position: initial;
+            margin: auto 0; }
+      .categories .category .purna-yoga-benefits .category-benefit {
+        flex-direction: row-reverse; }
+      .categories .category .category-button {
+        display: none; } }
+
+@media (min-width: 1024px) {
+  .categories .category .category-title {
+    font-size: 3.5rem; }
+  .categories .category .category-description p {
+    font-size: 2rem; }
+  .categories .category .category-benefits-title h3 {
+    font-size: 2.4rem; }
+  .categories .category .category-benefits .category-benefit .category-benefit-description {
+    font-size: 2rem;
+    padding: 0 2rem; } }
+
+@media (min-width: 1200px) {
+  .categories .category .category-description {
+    font-size: 2.3rem; }
+  .categories .category .category-benefits .category-benefit {
+    width: 90%;
+    margin: 3rem auto; }
+    .categories .category .category-benefits .category-benefit .category-benefit-image {
+      height: 5rem; } }
 
 .footer {
   display: flex;
@@ -240,6 +354,19 @@ header {
   height: 0.6rem;
   border-radius: 0.5rem;
   margin: 5rem auto; }
+
+
+@media (min-width: 768px) {
+  .sobre-mi {
+    width: 70%;
+    margin: 15rem auto; }
+    .sobre-mi .introduction-img {
+      height: 30rem;
+      width: auto; } }
+
+@media (min-width: 1000px) {
+  .sobre-mi {
+    width: 60%; } }
 
 .propuestas-main {
   text-align: center;
