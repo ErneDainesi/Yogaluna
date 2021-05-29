@@ -18,22 +18,3 @@ function mobile_icon_transformation() {
     line3.removeAttr("style");
   }
 }
-
-function change_web_icon() {
-  let promotion_msj = document
-    .getElementById("categories-separation")
-    .getBoundingClientRect();
-  if (promotion_msj.top <= 210 && promotion_msj.top >= -300) {
-    $("#categories-separation").css({
-      "background-attachment": "fixed",
-      "background-position": "center",
-    });
-  } else {
-    $("#categories-separation").css({ "background-attachment": "local" });
-    if (promotion_msj.top >= 210) {
-      $("#categories-separation").css({ "background-position": "top" });
-    } else if (promotion_msj.top <= -300) {
-      $("#categories-separation").css({ "background-position": "bottom" });
-    }
-  }
-}

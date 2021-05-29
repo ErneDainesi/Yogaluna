@@ -260,9 +260,7 @@ header {
         .category-benefit-description {
           margin: 0 auto;
           padding: 0 4rem;
-          p {
-            font-size: 1.5rem;
-          }
+          font-size: 1.5rem;
         }
         .category-benefit-image {
           position: absolute;
@@ -278,13 +276,11 @@ header {
       }
     }
     .category-button {
-      a {
-        background-color: $button-color;
-        border-radius: 1rem;
-        font-size: 1.8rem;
-        padding: 0.7rem 2rem;
-        font-weight: bold;
-      }
+      background-color: $button-color;
+      border-radius: 1rem;
+      font-size: 1.8rem;
+      padding: 0.7rem 2rem;
+      font-weight: bold;
     }
   }
 }
@@ -326,9 +322,8 @@ header {
       width: 60rem;
       background-image: url("../img/inicio/iconos-inicio/yoga-pose.png");
       background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-      margin: 5rem 0;
+      background-position: top;
+      margin-top: 15rem;
     }
     .category {
       padding: 0 1rem;
@@ -435,9 +430,10 @@ header {
 @media (min-width: 1500px) {
   .categories {
     .category {
+      padding: 0 5rem;
       .category-benefits {
         .category-benefit {
-          width: 60%;
+          width: 70%;
         }
       }
     }
