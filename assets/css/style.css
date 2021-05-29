@@ -191,9 +191,8 @@ header {
       position: relative; }
       .categories .category .category-benefits .category-benefit .category-benefit-description {
         margin: 0 auto;
-        padding: 0 4rem; }
-        .categories .category .category-benefits .category-benefit .category-benefit-description p {
-          font-size: 1.5rem; }
+        padding: 0 4rem;
+        font-size: 1.5rem; }
       .categories .category .category-benefits .category-benefit .category-benefit-image {
         position: absolute;
         top: 0;
@@ -201,7 +200,7 @@ header {
         height: 4rem; }
     .categories .category .category-benefits .category-benefit:nth-of-type(2) .category-benefit-image {
       left: -2rem; }
-  .categories .category .category-button a {
+  .categories .category .category-button {
     background-color: #f2b1be;
     border-radius: 1rem;
     font-size: 1.8rem;
@@ -227,9 +226,8 @@ header {
       width: 60rem;
       background-image: url("../img/inicio/iconos-inicio/yoga-pose.png");
       background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-      margin: 5rem 0; }
+      background-position: top;
+      margin-top: 15rem; }
     .categories .category {
       padding: 0 1rem; }
       .categories .category .web-title {
@@ -286,8 +284,10 @@ header {
       height: 5rem; } }
 
 @media (min-width: 1500px) {
-  .categories .category .category-benefits .category-benefit {
-    width: 60%; } }
+  .categories .category {
+    padding: 0 5rem; }
+    .categories .category .category-benefits .category-benefit {
+      width: 70%; } }
 
 .footer {
   display: flex;
@@ -360,7 +360,6 @@ header {
   height: 0.6rem;
   border-radius: 0.5rem;
   margin: 5rem auto; }
-
 
 @media (min-width: 768px) {
   .sobre-mi {
