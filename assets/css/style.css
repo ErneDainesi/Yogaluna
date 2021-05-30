@@ -483,6 +483,12 @@ header {
   width: 100%; }
 
 @media screen and (min-width: 768px) {
+  .yogaluna-section-title {
+    font-size: 4rem; }
+  .yogaluna-section-text {
+    font-size: 2rem; } }
+
+@media screen and (min-width: 768px) {
   .contact-title {
     font-size: 4rem; } }
 

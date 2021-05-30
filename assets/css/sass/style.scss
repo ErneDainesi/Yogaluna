@@ -691,6 +691,20 @@ header {
   width: 100%;
 }
 
+// INDEX YOGALUNA TEXT
+
+@media screen and (min-width: 768px) {
+  .yogaluna-section {
+    &-title {
+      font-size: 4rem;
+    }
+
+    &-text {
+      font-size: 2rem;
+    }
+  }
+}
+
 // CONTACTO DESKTOP
 
 @media screen and (min-width: 768px) {
