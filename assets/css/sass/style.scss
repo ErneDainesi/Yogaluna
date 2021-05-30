@@ -682,13 +682,21 @@ header {
 
 // CONTACTO
 .contact-title {
-  font-size: 4rem;
+  font-size: 2rem;
   text-align: center;
   font-weight: bold;
 }
 
 .google-form {
   width: 100%;
+}
+
+// CONTACTO DESKTOP
+
+@media screen and (min-width: 768px) {
+  .contact-title {
+    font-size: 4rem;
+  }
 }
 
 // PROPUESTAS DESKTOP
@@ -947,6 +955,18 @@ header {
           }
         }
       }
+    }
+  }
+}
+
+// FOOTER QUERIES
+
+@media screen and (min-width: 769px) {
+  .footer {
+    &-header,
+    &-header::after,
+    &-info {
+      padding-left: 2rem;
     }
   }
 }
