@@ -127,8 +127,8 @@ header {
     }
     .header-social-media {
       .social-media-link {
-        font-size: 2rem;
-        margin-right: 0.5rem;
+        font-size: 2.5rem;
+        margin-right: 1rem;
       }
     }
   }
@@ -467,7 +467,7 @@ header {
 
   &-header {
     font-size: 2rem;
-    padding: 1rem 0rem 1rem 1rem;
+    padding: 1rem 0rem;
   }
 
   &-header::after {
@@ -488,7 +488,15 @@ header {
   }
 
   &-social-media {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    a {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &-header,
+  &-info {
+    padding-left: 2rem;
   }
 
   &-info,
@@ -501,7 +509,6 @@ header {
   &-phone,
   &-social-media {
     padding-bottom: 1rem;
-    padding-left: 1rem;
   }
 
   &-copyright {
@@ -591,7 +598,12 @@ header {
     @include align-width(center, 10rem);
   }
   .social-media-link {
+    width: fit-content;
     font-size: 3.5rem;
+    margin: 0 auto;
+    i {
+      transition: color 0.5s ease;
+    }
   }
 
   .image-section {
