@@ -158,8 +158,8 @@ header {
         text-shadow: 0.7rem 0.7rem 1rem black; }
       .yogaluna-section .carousel-item .carousel-link .category-button {
         background-color: #f2b1be;
-        border-radius: 1rem;
-        font-size: 0.8rem;
+        border-radius: 0.7rem;
+        font-size: 1.5rem;
         padding: 0.3rem 1rem;
         font-weight: bold; }
     .yogaluna-section .carousel-item #carousel-link-2 {
@@ -477,10 +477,11 @@ header {
     .propuestas-main .contact-section .contact-btn {
       align-self: center;
       background-color: #fff9f9;
+      font-weight: bold;
       border: none;
       border-radius: 1rem;
-      padding: 0.5rem 0.5rem;
-      font-size: 1.2rem; }
+      padding: 0.7rem 2rem;
+      font-size: 1.8rem; }
 
 .contact-title {
   font-size: 2rem;
