@@ -142,7 +142,7 @@ header {
     display: flex;
     justify-content: space-between;
     .header-navbar {
-      width: 30%;
+      width: fit-content;
       .mobile-icon-container {
         display: none;
       }
@@ -150,10 +150,11 @@ header {
     .header-content {
       display: flex;
       justify-content: space-between;
-      width: 70%;
       margin-top: 3.5rem;
+      width: 100%;
       .header-navigation {
-        width: 80%;
+        width: 60%;
+        margin: 0 auto;
         .header-links {
           display: flex;
           justify-content: space-around;
@@ -161,7 +162,7 @@ header {
         }
       }
       .header-social-media {
-        width: 20%;
+        width: fit-content;
         text-align: end;
       }
     }
