@@ -107,22 +107,23 @@ header {
     display: flex;
     justify-content: space-between; }
     header .header-navbar {
-      width: 30%; }
+      width: fit-content; }
       header .header-navbar .mobile-icon-container {
         display: none; }
     header .header-content {
       display: flex;
       justify-content: space-between;
-      width: 70%;
-      margin-top: 3.5rem; }
+      margin-top: 3.5rem;
+      width: 100%; }
       header .header-content .header-navigation {
-        width: 80%; }
+        width: 60%;
+        margin: 0 auto; }
         header .header-content .header-navigation .header-links {
           display: flex;
           justify-content: space-around;
           margin: 0; }
       header .header-content .header-social-media {
-        width: 20%;
+        width: fit-content;
         text-align: end; } }
 
 .yogaluna-section {
